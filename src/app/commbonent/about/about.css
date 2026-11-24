@@ -1,0 +1,51 @@
+.homec{
+    background: #141413;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    border:2px solid #2b2928;
+    border-radius: 30px;
+    color: #686868;
+    transition: 0.2s;
+    margin-top: 40px;
+}
+.section1{
+    background-image: url("/imgs/bg.jpeg");
+
+}
+.card{
+    background: #161616;
+    color: white;
+    transition: 0.5s;
+}
+.card p {
+    font-size: 10px;
+}
+    .sbtn {
+      width: 36px;
+      height: 36px;
+      background-color: #161616;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      color: #a0a0a0;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .sbtn:hover {
+      background-color: #ff7300;
+      border-color: #ff7300;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+   .card:hover{
+    border: 2px solid #ff7300;
+   } 
+
+   .card .aimg{
+    transition: 0.5s;
+   }
+   .card:hover .aimg{
+    border: 2px solid #ff7300;
+   }

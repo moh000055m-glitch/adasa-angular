@@ -1,0 +1,106 @@
+
+    footer {
+      background-color: #0a0a0a;
+      border-top: 1px solid #1f1f1f;
+      padding-top: 14px;
+      padding-bottom: 20px;
+    }
+
+    .bicon {
+      width: 38px;
+      height: 38px;
+      background:  #e65100;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(255, 123, 0, 0.3);
+    }
+
+    .sbtn {
+      width: 36px;
+      height: 36px;
+      background-color: #161616;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      color: #a0a0a0;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .sbtn:hover {
+      background-color: #ff7300;
+      border-color: #ff7300;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .footer-heading {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .heading-line {
+      width: 18px;
+      height: 2px;
+      background-color: #ff7300;
+      border-radius: 2px;
+    }
+
+    .footer-link {
+      color: #8c8c8c;
+      text-decoration: none;
+      font-size: 14px;
+      transition:0.2s;
+    }
+
+    .footer-link:hover {
+      color: #ff7300;
+      padding-right: 4px;
+    }
+
+    .newsletter {
+      background-color: #161616;
+      border: 1px solid #262626;
+      border-radius: 10px;
+      color: #ffffff;
+      padding: 11px;
+      font-size: 9px;
+    }
+
+  
+    .newsletter-input:focus {
+      background-color: #1a1a1a;
+      border-color: #ff7300;
+      color: #ffffff;
+    }
+
+    .newsletter-btn {
+      background:#ff5e00;
+      border: none;
+      border-radius: 20px;
+      color: #ffffff;
+      font-weight: 600;
+      padding: 14px;
+      transition: 0.2s;
+    }
+
+    .newsletter-btn:hover {
+      opacity: 0.92;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .bottomf{
+      border-top: 1px solid #1a1a1a;
+      margin-top: 9px;
+      padding-top: 13px;
+      font-size: 15px;
+      color: #707070;
+    }
+
+    .text-orange {
+      color: #ff7300;
+    }

@@ -1,0 +1,85 @@
+<section class="section1">
+  <div class="headw"><p> مدونتنا  </p></div>
+  <div class="text-center text-light">
+    <h1 style="font-size: 70px">استكشف مقالاتنا
+    </h1>
+    <br />
+    <p class="h4" style="color: #a1a1a1"> اكتشف الدروس والرؤى وأفضل الممارسات للتطوير الحديث
+    </p>
+  </div>
+</section>
+<section class="section2 ">
+    <div>
+        <select name="catagory"  [(ngModel)]="catagory">
+            <option value="جميع المقالات">جميع المقالات</option>
+            <option value="إضاءة">إضاءة</option>
+            <option value="بورتريه">بورتريه</option>
+            <option value="مناظر طبيعية">مناظر طبيعية</option>
+            <option value="تقنيات">تقنيات</option>
+            <option value="معدات">معدات</option>
+        </select>
+    </div>
+    <div class="container mt-4  ">
+        <div class="row g-4">
+          @for (p of data; track p.id) {
+            @if (p.category == catagory) {
+            <div class="col-lg-4 col-md-6">
+            <div class="card " style="width: 18rem;">
+  <div class="img-contain"><img [src]="p.image" class="card-img-top" alt="..."></div>
+  <div class="card-body">
+    <p>{{p.readTime}}</p>
+    <h3 style="font-size: 20px;" class="card-text">{{p.title}}</h3>
+    <p style="font-size: 13;">{{p.excerpt}}</p>
+    <hr>
+    <div class="d-flex justify-content-between">
+        <div><button class="arrbtn rounded-circle">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button></div>
+        <div class="d-flex gap-3z">
+            <p class="h1">
+                {{p.author.name}} <br>
+                <span style="color: #a1a1a1;">{{p.author.role }}</span> 
+
+            </p>
+            <img style="width: 40px;" [src]="p.author.avatar" alt="" class="rounded-circle">
+        </div>
+    </div>
+  </div>
+</div>
+            </div>
+
+  }@else if (catagory == "جميع المقالات") {
+                <div class="col-lg-4 col-md-6">
+            <div class="card " style="width: 18rem;">
+  <div class="img-contain"><img [src]="p.image" class="card-img-top" alt="..."></div>
+  <div class="card-body">
+    <p>{{p.readTime}}</p>
+    <h3 style="font-size: 20px;" class="card-text">{{p.title}}</h3>
+    <p style="font-size: 13;">{{p.excerpt}}</p>
+    <hr>
+    <div class="d-flex justify-content-between">
+        <div><button class="arrbtn rounded-circle">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button></div>
+        <div class="d-flex gap-3">
+            <p class="h1">
+                {{p.author.name}} <br>
+                <span style="color: #a1a1a1;">{{p.author.role }}</span> 
+
+            </p>
+            <img style="width: 40px;" [src]="p.author.avatar" alt="" class="rounded-circle">
+        </div>
+    </div>
+  </div>
+</div>
+            </div>
+  }
+
+}
+        </div>
+
+
+
+    </div>
+
+</section>
